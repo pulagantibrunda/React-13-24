@@ -1,11 +1,15 @@
-
-import React from "react";
+import React, { Component } from "react";
 import './Header.css';
-function Header() {
+
+class Header extends Component {
+  render() {
     return (
       <header className="achieveRseit-header">
         <div className="logo-container">
-          <img src="https://www.achieversit.com/assets/images/logo-white.png" alt="logo" />
+          <img
+            src="https://www.achieversit.com/assets/images/logo-white.png"
+            alt="logo"
+          />
         </div>
         <nav>
           <ul className="nav-list">
@@ -21,5 +25,6 @@ function Header() {
       </header>
     );
   }
-  
-  export default Header;
+}
+
+export default Header;
