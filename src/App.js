@@ -1,26 +1,19 @@
-
+import React from 'react';
 import './App.css';
-import Header from'./components/Header.jsx';
-import './components/Header.css';
-import Footer from './components/Footer.jsx';
-import './components/Footer.jsx';
-import products from './components/products.jsx';
-import './components/products.css';
-import About from './components/About.jsx';
+ // Importing Card component
+import Header from './components/Header'; // Assuming Header component
+import Footer from './components/Footer';
+import Cards from './components/Cards';  
+import './components/Cards.css'
 function App() {
+ 
   return (
-    
-     
     <div className="App">
-
-    <Header />
- <About/>
-  <products />
-   <Footer/>
-  
-  
-  </div>
-    
+      <Header />
+      <h1>TRENDING COURSES</h1>
+     <Cards/>
+      <Footer />
+    </div>
   );
 }
 
